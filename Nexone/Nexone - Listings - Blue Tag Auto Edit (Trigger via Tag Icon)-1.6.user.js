@@ -4,8 +4,8 @@
 // @version      1.6
 // @description  Automate profile editing on Nexone by clicking the tag icon
 // @match        https://legend.nexone.ca/Secure/Sale/Property/Profile/*
-// @downloadURL
-// @updateURL
+// @downloadURL  https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Blue%20Tag%20Auto%20Edit%20(Trigger%20via%20Tag%20Icon)-1.6.user.js
+// @updateURL    https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Blue%20Tag%20Auto%20Edit%20(Trigger%20via%20Tag%20Icon)-1.6.user.js
 // @grant        none
 // ==/UserScript==
 
