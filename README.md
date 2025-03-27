@@ -6,7 +6,7 @@ This repository contains a collection of Tampermonkey scripts that ease the Nexo
 
 ### 1. Install the Legacy Tampermonkey Extension for Chrome
 - Download and install the **legacy Tampermonkey extension** for Chrome from this link:  
-  [Tampermonkey Legacy for Chrome]([https://chrome.google.com/webstore/detail/tampermonkey-legacy/](https://chromewebstore.google.com/detail/tampermonkey-legacy/lcmhijbkigalmkeommnijlpobloojgfn).
+  [Tampermonkey Legacy for Chrome](https://chromewebstore.google.com/detail/tampermonkey-legacy/lcmhijbkigalmkeommnijlpobloojgfn).
   
 - **Note:** The legacy version is required for compatibility with our limitations with our staff server.  
 - After installation, you should see the Tampermonkey icon in the top-right corner of your browser.
