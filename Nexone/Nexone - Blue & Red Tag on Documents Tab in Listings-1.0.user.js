@@ -5,6 +5,8 @@
 // @description  Fetch blue and red tags from the property profile page and insert them with icons in the profile validation section.
 // @author       Austin
 // @match        https://legend.nexone.ca/Secure/Sale/Property/Documents.aspx*
+// @downloadURL  https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Blue%20&%20Red%20Tag%20on%20Documents%20Tab%20in%20Listings-1.0.user.js
+// @updateURL    https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Blue%20&%20Red%20Tag%20on%20Documents%20Tab%20in%20Listings-1.0.user.js
 // @grant        GM_xmlhttpRequest
 // ==/UserScript==
 
