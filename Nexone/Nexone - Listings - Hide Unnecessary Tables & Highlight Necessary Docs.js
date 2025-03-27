@@ -6,7 +6,7 @@
 // @match        https://legend.nexone.ca/Secure/Sale/Property/Documents.aspx*
 // @downloadURL  https://raw.githubusercontent.com/Austoonzzz/nexone-rlp-scripts/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Hide%20Unnecessary%20Tables%20%26%20Highlight%20Necessary%20Docs.js
 // @updateURL    https://raw.githubusercontent.com/Austoonzzz/nexone-rlp-scripts/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Hide%20Unnecessary%20Tables%20%26%20Highlight%20Necessary%20Docs.js
-// @grant        none
+// @grant        GM_xmlhttpRequest
 // ==/UserScript==
 
 (function() {
