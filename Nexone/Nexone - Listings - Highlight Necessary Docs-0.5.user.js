@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.5
 // @description  Highlight rows with specific text unless they contain "Missing" or "Validated" images
-// @author       You
+// @author       Austin
 // @match        https://legend.nexone.ca/Secure/Sale/Property/Documents.aspx?*
 // @downloadURL  https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Highlight%20Necessary%20Docs-0.5.user.js
 // @updateURL    https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Highlight%20Necessary%20Docs-0.5.user.js
