@@ -5,8 +5,8 @@
 // @description  Ensures Notify button appears on page load and after tab switches.
 // @author       You
 // @match        https://legend.nexone.ca/Secure/Sale/Property/Documents.aspx*
-// @downloadURL
-// @updateURL
+// @downloadURL  https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Missing%20Docs%20Notifier-1.6.user.js
+// @updateURL    https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Missing%20Docs%20Notifier-1.6.user.js
 // @grant        none
 // ==/UserScript==
 
