@@ -21,9 +21,9 @@
         const email = emailElement.textContent.trim();
         const emailToNameMap = {
             'aanderson@royallepage.ca': 'Austin',
-            'chantillylewis@royallepage.ca': 'Tilly',
+            'clewis@performancerealty.ca': 'Tilly',
             'jsouannhaphanh@royallepage.ca': 'Jessica',
-            'san@royallepage.ca': 'Serena',
+            'sAn@performancerealty.ca': 'Serena',
             'lesliec@royallepage.ca': 'Leslie'
         };
 
