@@ -1,17 +1,34 @@
 // ==UserScript==
 // @name         Nexone - Listings - Missing Docs Notifier
 // @namespace    http://tampermonkey.net/
-// @version      1.6
-// @description  Ensures Notify button appears on page load and after tab switches.
+// @version      1.8
+// @description  Ensures Notify button appears on page load and after tab switches. Fetches user name from email in header correctly now.
 // @author       You
 // @match        https://legend.nexone.ca/Secure/Sale/Property/Documents.aspx*
-// @downloadURL  https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Missing%20Docs%20Notifier-1.6.user.js
-// @updateURL    https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Missing%20Docs%20Notifier-1.6.user.js
+// @downloadURL  https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Missing%20Docs%20Notifier-1.8.user.js
+// @updateURL    https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Missing%20Docs%20Notifier-1.8.user.js
 // @grant        none
 // ==/UserScript==
 
 (function() {
     'use strict';
+
+    // Function to get the user's name based on email
+    function getUserName() {
+        const emailElement = document.querySelector('.header_user span'); // Target the <span> inside .header_user
+        if (!emailElement) return ''; // Default name if not found
+
+        const email = emailElement.textContent.trim();
+        const emailToNameMap = {
+            'aanderson@royallepage.ca': 'Austin',
+            'chantillylewis@royallepage.ca': 'Tilly',
+            'jsouannhaphanh@royallepage.ca': 'Jessica',
+            'san@royallepage.ca': 'Serena',
+            'lesliec@royallepage.ca': 'Leslie'
+        };
+
+        return emailToNameMap[email] || ''; // Default to "BLANK" if email is not in the map
+    }
 
     // Function to create and insert the Notify button
     function addNotifyButton() {
@@ -98,10 +115,13 @@
         const currentTime = new Date();
         const greeting = currentTime.getHours() < 12 ? 'Good morning' : 'Good afternoon';
 
+        // Get the user name from the email
+        const userName = getUserName();
+
         // Insert greeting before auto-populated text
         messageContainer.innerHTML = `${greeting},<br><br>Could you kindly upload the following documents at your earliest convenience:<br>`
                                    + messageContainer.innerHTML
-                                   + `<br><br>Thank you,<br><br>Austin`;
+                                   + `<br><br>Thank you,<br><br>${userName}`;
     }
 
     // Function to wait for an element to exist in the DOM
