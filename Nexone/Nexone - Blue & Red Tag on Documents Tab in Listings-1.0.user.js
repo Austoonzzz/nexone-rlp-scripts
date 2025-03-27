@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Nexone - Blue & Red Tag on Documents Tab in Listings
+// @name         Nexone - Listings - Blue & Red Tag on Documents Tab
 // @namespace    http://tampermonkey.net/
 // @version      1.0
 // @description  Fetch blue and red tags from the property profile page and insert them with icons in the profile validation section.
