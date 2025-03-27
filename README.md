@@ -26,4 +26,4 @@ This repository contains a collection of Tampermonkey scripts that ease the Nexo
 
 ### 4. Getting Help
 - If you encounter any issues or need assistance, please contact Austin in Google Chat or email.
-
+- If you have a GitHUB account, you can also submit a ticket in the ["Issues"](https://github.com/Austoonzzz/nexone-rlp-scripts/issues) tab
