@@ -14,7 +14,7 @@ This repository contains a collection of Tampermonkey scripts that ease the Nexo
 ### 2. Install Scripts
 - To install each script, simply click on the following links:
   - [Nexone - Listings - Missing Docs Notifier](https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Missing%20Docs%20Notifier-1.6.user.js)
-  - [Nexone - Listings - Hide Unnecessary Tables & Highlight Necessary Docs](https://github.com/Austoonzzz/nexone-rlp-scripts/blob/main/Nexone/Nexone%20-%20Listings%20-%20Hide%20Unnecessary%20Tables%20%26%20Highlight%20Necessary%20Docs-1.6.user.js)
+  - [Nexone - Listings - Hide Unnecessary Tables & Highlight Necessary Docs](https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Hide%20Unnecessary%20Tables%20&%20Highlight%20Necessary%20Docs-1.6.user.js)
   - [Nexone - Listings - Blue & Red Tag on Documents Tab](https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Blue%20&%20Red%20Tag%20on%20Documents%20Tab%20in%20Listings-1.0.user.js)
   - [Nexone - Listings - Blue Tag Auto Edit (Trigger via Tag Icon)](https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Blue%20Tag%20Auto%20Edit%20(Trigger%20via%20Tag%20Icon)-1.6.user.js)
 
