@@ -15,9 +15,13 @@
     function waitForTagIcon() {
         console.log("⏳ Waiting for the tag icon...");
 
+        // Use MutationObserver to watch for changes in the parent div where the image might be inserted.
         const observer = new MutationObserver((mutations, observer) => {
-            const tagIcon = document.querySelector('img.iconImage3[src="/Media/Images/Icons/tag_blue.png"]');
+            mutations.forEach((mutation) => {
+                console.log("Mutation detected:", mutation); // Debugging log to track mutations
+            });
 
+            const tagIcon = document.querySelector('.labelleft.table_left_readonly img.iconImage3[src="/Media/Images/Icons/tag_blue.png"]');
             if (tagIcon) {
                 console.log("✅ Tag Icon found! Attaching click event.");
                 attachToTagIcon(tagIcon);
@@ -25,11 +29,28 @@
             }
         });
 
-        observer.observe(document.body, { childList: true, subtree: true });
+        // Observe the parent div where the image is located
+        const targetDiv = document.querySelector('.labelleft.table_left_readonly');
+        if (targetDiv) {
+            observer.observe(targetDiv, { childList: true, subtree: true });
+        } else {
+            console.warn("⚠️ Parent div not found!");
+        }
+
+        // Fallback using setInterval in case MutationObserver doesn't detect the icon right away
+        const checkInterval = setInterval(() => {
+            const tagIconExists = document.querySelector('.labelleft.table_left_readonly img.iconImage3[src="/Media/Images/Icons/tag_blue.png"]');
+            if (tagIconExists) {
+                console.log("✅ Tag Icon found via setInterval!");
+                attachToTagIcon(tagIconExists);
+                clearInterval(checkInterval); // Stop checking once found
+            }
+        }, 500); // Check every 500ms
 
         // Log a message if the tag icon isn't found after 5 seconds
         setTimeout(() => {
-            const tagIconExists = document.querySelector('img.iconImage3[src="/Media/Images/Icons/tag_blue.png"]');
+            clearInterval(checkInterval); // Stop the interval after 5 seconds
+            const tagIconExists = document.querySelector('.labelleft.table_left_readonly img.iconImage3[src="/Media/Images/Icons/tag_blue.png"]');
             if (!tagIconExists) {
                 console.warn("⚠️ Tag Icon not found after 5 seconds. It might not exist on this page.");
             }
