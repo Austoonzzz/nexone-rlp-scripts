@@ -153,16 +153,19 @@
         return `${month} ${day}:`;
     }
 
-    function getEmailInitials() {
-        const emailSpan = document.querySelector('.header_user span');
-        if (emailSpan) {
-            const email = emailSpan.textContent.trim();
-            if (email.length >= 2) {
-                return email.slice(0, 2).toUpperCase();
-            }
+function getEmailInitials() {
+    const emailSpan = document.querySelector('.header_user span');
+    if (emailSpan) {
+        const email = emailSpan.textContent.trim().toLowerCase(); // Normalize to lowercase
+        if (email === "lesliec@royallepage.ca") {
+            return "LC"; // Special case for Leslie
         }
-        return "XX";
+        if (email.length >= 2) {
+            return email.slice(0, 2).toUpperCase(); // Default behavior
+        }
     }
+    return "XX";
+}
 
     waitForTagIcon(); // Start waiting for the tag icon
 })();
