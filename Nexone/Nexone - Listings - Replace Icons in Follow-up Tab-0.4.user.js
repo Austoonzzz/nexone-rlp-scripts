@@ -5,8 +5,8 @@
 // @description  Replace icon source in messageHeader based on the presence of "to" label in messageDetails
 // @author       You
 // @match        https://legend.nexone.ca/Secure/Sale/Property/Documents.aspx*
-// @downloadURL  
-// @updateURL 
+// @downloadURL  https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Replace%20Icons%20in%20Follow-up%20Tab-0.4.user.js
+// @updateURL    https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Replace%20Icons%20in%20Follow-up%20Tab-0.4.user.js
 // @grant        none
 // ==/UserScript==
 
