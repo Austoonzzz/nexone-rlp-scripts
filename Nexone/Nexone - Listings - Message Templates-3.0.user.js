@@ -4,8 +4,8 @@
 // @version      3.0
 // @description  Optimized version to detect message dialog and track checked persons with throttling to avoid crashes.
 // @match        https://legend.nexone.ca/Secure/Sale/Property/Documents.aspx*
-// @downloadURL
-// @updateURL
+// @downloadURL  https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Message%20Templates-3.0.user.js
+// @updateURL    https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Message%20Templates-3.0.user.js
 // @grant        none
 // ==/UserScript==
 
