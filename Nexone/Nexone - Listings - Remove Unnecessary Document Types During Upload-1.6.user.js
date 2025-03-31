@@ -4,8 +4,8 @@
 // @version      1.6
 // @description  Logs when "Add documents" and close button are clicked, filters select options dynamically
 // @match        https://legend.nexone.ca/Secure/Sale/Property/Documents.aspx*
-// @downloadURL  
-// @updateURL    
+// @downloadURL  https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Remove%20Unnecessary%20Document%20Types%20During%20Upload-1.6.user.js
+// @updateURL    https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Remove%20Unnecessary%20Document%20Types%20During%20Upload-1.6.user.js
 // @grant        none
 // ==/UserScript==
 
