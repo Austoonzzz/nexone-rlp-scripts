@@ -1,9 +1,8 @@
 // ==UserScript==
 // @name         Nexone - Listings - Missing Docs Notifier
 // @namespace    http://tampermonkey.net/
-// @version      1.8
+// @version      1.6
 // @description  Ensures Notify button appears on page load and after tab switches. Fetches user name from email in header correctly now.
-// @author       You
 // @match        https://legend.nexone.ca/Secure/Sale/Property/Documents.aspx*
 // @downloadURL  https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Missing%20Docs%20Notifier-1.6.user.js
 // @updateURL    https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Missing%20Docs%20Notifier-1.6.user.js
@@ -24,7 +23,17 @@
             'clewis@performancerealty.ca': 'Tilly',
             'jsouannhaphanh@royallepage.ca': 'Jessica',
             'sAn@performancerealty.ca': 'Serena',
-            'lesliec@royallepage.ca': 'Leslie'
+            'lesliec@royallepage.ca': 'Leslie',
+            'emack@performancerealty.ca': 'Emily',
+            'hali@royallepage.ca': 'Hoda',
+            'jlecompte@performancerealty.ca': 'Joanne',
+            'kcrystal@performancerealty.ca': 'Ken',
+            'mguibord@performancerealty.ca': 'Mathilde',
+            'mdagenais@performancerealty.ca': 'Mikayla',
+            'maladejebi@performancerealty.ca': 'Mojo',
+            'semery@performancerealty.ca': 'Silvia',
+            'tservage@performancerealty.ca': 'Tiffany',
+            'wmallette@royallepage.ca': 'Wendy'
         };
 
         return emailToNameMap[email] || ''; // Default to "BLANK" if email is not in the map
