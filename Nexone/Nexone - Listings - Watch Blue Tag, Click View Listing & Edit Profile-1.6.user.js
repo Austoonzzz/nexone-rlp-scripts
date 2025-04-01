@@ -1,12 +1,10 @@
 // ==UserScript==
 // @name         Nexone - Watch Blue Tag, Click View Listing & Edit Profile
 // @namespace    http://tampermonkey.net/
-// @version      1.6
+// @version      1.7
 // @description  Watches blue tag changes, stores updates, clicks "View Listing", edits Profile, checks checkbox, fills textarea, saves changes, and clicks Profile
 // @match        https://legend.nexone.ca/Secure/Sale/Property/Documents.aspx*
 // @match        https://legend.nexone.ca/Secure/Sale/Property/Profile*
-// @downloadURL  https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Watch%20Blue%20Tag,%20Click%20View%20Listing%20&%20Edit%20Profile-1.6.user.js
-// @updateURL    https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Watch%20Blue%20Tag,%20Click%20View%20Listing%20&%20Edit%20Profile-1.6.user.js
 // @grant        none
 // ==/UserScript==
 
@@ -20,17 +18,24 @@
     }
 
     if (window.location.href.includes("Profile")) {
-        window.addEventListener("load", function () {
-            console.log("Profile page fully loaded. Proceeding to edit...");
-            setTimeout(() => {
-                const blueTag = localStorage.getItem("blueTag");
-                if (blueTag && blueTag !== "No stored text found") {
-                    setTimeout(() => clickEditButton(checkIsTaggedCheckbox), 1000);
-                } else {
-                    console.log("❌ No valid blue tag text found in localStorage. Script will not run.");
-                }
-            }, 1000);
-        });
+        let attempts = 0;
+        const maxAttempts = 5;  // Try up to 5 times
+        const checkInterval = 1000; // 1 second between checks
+
+        const interval = setInterval(() => {
+            attempts++;
+            console.log(`🔄 Checking if Profile page is ready... Attempt ${attempts}/${maxAttempts}`);
+
+            const editButton = document.querySelector("#switchProfileText");
+            if (editButton) {
+                console.log("✅ Profile page loaded. Proceeding to edit...");
+                clearInterval(interval);
+                processProfilePage();
+            } else if (attempts >= maxAttempts) {
+                console.log("❌ Profile page did not load in time. Stopping script.");
+                clearInterval(interval);
+            }
+        }, checkInterval);
     }
 
     function observeBlueTagChanges() {
@@ -77,6 +82,17 @@
         } else {
             console.warn("View Listing link not found!");
         }
+    }
+
+    function processProfilePage() {
+        setTimeout(() => {
+            const blueTag = localStorage.getItem("blueTag");
+            if (blueTag && blueTag !== "No stored text found") {
+                setTimeout(() => clickEditButton(checkIsTaggedCheckbox), 1000);
+            } else {
+                console.log("❌ No valid blue tag text found in localStorage. Script will not run.");
+            }
+        }, 1000);
     }
 
     function clickEditButton(callback) {
