@@ -5,8 +5,8 @@
 // @description  Moves the edit button inside the blue tag
 // @author       You
 // @match        https://legend.nexone.ca/Secure/Sale/Property/Documents.aspx*
-// @downloadURL  https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Auto%20Edit%20Blue%20Tag%20in%20Documents%20Tab-0.4.user.js
-// @updateURL    https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Auto%20Edit%20Blue%20Tag%20in%20Documents%20Tab-0.4.user.js
+// @downloadURL  https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Add%20The%20Edit%20for%20the%20Blue%20Tag%20in%20Documents%20Tab-0.4.user.js
+// @updateURL    https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Add%20The%20Edit%20for%20the%20Blue%20Tag%20in%20Documents%20Tab-0.4.user.js
 // @grant        none
 // ==/UserScript==
 
