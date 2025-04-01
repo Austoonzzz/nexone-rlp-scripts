@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Nexone - Auto Edit Blue Tag in Documents Tab
+// @name         Nexone - Add The Edit for the Blue Tag in Documents Tab
 // @namespace    http://tampermonkey.net/
 // @version      0.4
 // @description  Moves the edit button inside the blue tag
