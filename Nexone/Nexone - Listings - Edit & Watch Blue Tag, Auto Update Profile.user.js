@@ -6,6 +6,8 @@
 // @author       You
 // @match        https://legend.nexone.ca/Secure/Sale/Property/Documents.aspx*
 // @match        https://legend.nexone.ca/Secure/Sale/Property/Profile*
+// @downloadURL  
+// @updateURL    
 // @grant        none
 // ==/UserScript==
 
