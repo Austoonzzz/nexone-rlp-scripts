@@ -5,6 +5,8 @@
 // @description  Watches blue tag changes, stores updates, clicks "View Listing", edits Profile, checks checkbox, fills textarea, saves changes, and clicks Profile
 // @match        https://legend.nexone.ca/Secure/Sale/Property/Documents.aspx*
 // @match        https://legend.nexone.ca/Secure/Sale/Property/Profile*
+// @downloadURL  https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Watch%20Blue%20Tag,%20Click%20View%20Listing%20&%20Edit%20Profile-1.6.user.js
+// @updateURL    https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Watch%20Blue%20Tag,%20Click%20View%20Listing%20&%20Edit%20Profile-1.6.user.js
 // @grant        none
 // ==/UserScript==
 
