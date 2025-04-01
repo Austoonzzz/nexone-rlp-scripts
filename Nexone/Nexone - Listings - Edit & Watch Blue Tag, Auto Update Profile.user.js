@@ -6,8 +6,8 @@
 // @author       You
 // @match        https://legend.nexone.ca/Secure/Sale/Property/Documents.aspx*
 // @match        https://legend.nexone.ca/Secure/Sale/Property/Profile*
-// @downloadURL  
-// @updateURL    
+// @downloadURL  https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Edit%20&%20Watch%20Blue%20Tag,%20Auto%20Update%20Profile.user.js
+// @updateURL    https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Edit%20&%20Watch%20Blue%20Tag,%20Auto%20Update%20Profile.user.js
 // @grant        none
 // ==/UserScript==
 
