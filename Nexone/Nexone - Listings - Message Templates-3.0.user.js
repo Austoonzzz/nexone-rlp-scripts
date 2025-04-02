@@ -4,8 +4,8 @@
 // @version      3.0
 // @description  Optimized version to detect message dialog and track checked persons with throttling to avoid crashes.
 // @match        https://legend.nexone.ca/Secure/Sale/Property/Documents.aspx*
-// @downloadURL  https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Message%20Templates-3.0.user.js
-// @updateURL    https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Message%20Templates-3.0.user.js
+// @downloadURL
+// @updateURL
 // @grant        none
 // ==/UserScript==
 
@@ -26,7 +26,7 @@
             'aanderson@royallepage.ca': 'Austin',
             'clewis@performancerealty.ca': 'Tilly',
             'jsouannhaphanh@royallepage.ca': 'Jessica',
-            'sAn@performancerealty.ca': 'Serena',
+            'san@performancerealty.ca': 'Serena',
             'lesliec@royallepage.ca': 'Leslie',
             'emack@performancerealty.ca': 'Emily',
             'hali@royallepage.ca': 'Hoda',
