@@ -1,8 +1,9 @@
 // ==UserScript==
 // @name         Nexone - Listings - Missing Docs Notifier
 // @namespace    http://tampermonkey.net/
-// @version      1.6
+// @version      1.8
 // @description  Ensures Notify button appears on page load and after tab switches. Fetches user name from email in header correctly now.
+// @author       You
 // @match        https://legend.nexone.ca/Secure/Sale/Property/Documents.aspx*
 // @downloadURL  https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Missing%20Docs%20Notifier-1.6.user.js
 // @updateURL    https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Missing%20Docs%20Notifier-1.6.user.js
