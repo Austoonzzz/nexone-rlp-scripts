@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Nexone - Remove Unnecessary Document Types During Upload
+// @name         Nexone - Hide Unnecessary Document Types During Upload
 // @namespace    http://tampermonkey.net/
 // @version      1.6
 // @description  Logs when "Add documents" and close button are clicked, filters select options dynamically
