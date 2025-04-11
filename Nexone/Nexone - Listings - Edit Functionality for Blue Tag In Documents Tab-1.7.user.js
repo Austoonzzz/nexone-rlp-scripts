@@ -5,6 +5,8 @@
 // @description  Watches blue tag changes, stores updates, clicks "View Listing", edits Profile, checks checkbox, fills textarea, saves changes, and clicks Profile
 // @match        https://legend.nexone.ca/Secure/Sale/Property/Documents.aspx*
 // @match        https://legend.nexone.ca/Secure/Sale/Property/Profile*
+// @downloadURL  
+// @updateURL    
 // @grant        none
 // ==/UserScript==
 
