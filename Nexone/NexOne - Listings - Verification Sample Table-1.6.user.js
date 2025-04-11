@@ -5,6 +5,8 @@
 // @description  Conditionally add sample column and clickable icons for NexOne Docs. Skips if no icons apply. Optimized for performance and dynamic content. Updated icon & target cell logic.
 // @author       You
 // @match        https://legend.nexone.ca/Secure/Sale/Property/Documents.aspx*
+// @downloadURL  
+// @updateURL    
 // @grant        none
 // ==/UserScript==
 
