@@ -1,11 +1,13 @@
 // ==UserScript==
-// @name         Nexone - MLS Copy to Clipboard
+// @name         Nexone - Listings - MLS Copy to Clipboard
 // @namespace    http://tampermonkey.net/
 // @version      1.2
 // @description  Checks for MLS number and adds copy icon in Nexone if found in specific containers only.
 // @author       You
 // @match        https://legend.nexone.ca/Secure/Sale/Property/Documents.aspx*
 // @match        https://legend.nexone.ca/Secure/Sale/Property/Profile*
+// @downloadURL  
+// @updateURL    
 // @grant        none
 // ==/UserScript==
 
