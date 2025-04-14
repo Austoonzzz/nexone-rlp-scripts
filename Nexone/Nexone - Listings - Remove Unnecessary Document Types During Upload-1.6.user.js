@@ -18,7 +18,7 @@
 
     // List of allowed option values
     const validOptions = [
-        2, 3, 14, 42, 50, 56, 72, 91, 94, 814, 912, 1064
+        2, 3, 14, 42, 50, 56, 72, 91, 94, 814, 912, 991, 1064
     ];
 
     // Detect when "Add documents" button is clicked
