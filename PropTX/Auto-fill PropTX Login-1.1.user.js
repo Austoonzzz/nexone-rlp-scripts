@@ -11,8 +11,8 @@
     'use strict';
 
     // ✏️ EDIT THESE VALUES BELOW
-    const USERNAME = '9644712'; // <- Change this to your username
-    const PASSWORD = '1500';    // <- Change this to your password
+    const USERNAME = 'XXXX'; // <- Change this to your username
+    const PASSWORD = 'XXXX';    // <- Change this to your password
 
     // 🔁 Retry settings
     const MAX_RETRIES = 5;
