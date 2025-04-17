@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Auto-fill PropTX Login (Reliable Version)
+// @name         Auto-fill PropTX Login
 // @namespace    http://tampermonkey.net/
 // @version      1.2
-// @description  Auto-fill login credentials on ampre sso with retry logic and easy editing
+// @description  Auto-fill login credentials on ampre sso with retry and logging
 // @match        https://sso.ampre.ca/*
 // @grant        none
 // ==/UserScript==
@@ -11,15 +11,17 @@
     'use strict';
 
     // ✏️ EDIT THESE VALUES BELOW
-    const USERNAME = 'XXX'; // <- Change this to your username
-    const PASSWORD = 'XXX';    // <- Change this to your password
-    // 🛑 DO NOT EDIT BELOW THIS LINE UNLESS YOU KNOW WHAT YOU’RE DOING
+    const USERNAME = '9644712'; // <- Change this to your username
+    const PASSWORD = '1500';    // <- Change this to your password
 
-    const MAX_ATTEMPTS = 5;
-    const RETRY_DELAY = 500; // milliseconds
-    let attempts = 0;
+    // 🔁 Max number of retries
+    const MAX_RETRIES = 5;
+    let attempt = 0;
 
-    function tryFillFields() {
+    function fillLogin() {
+        attempt++;
+        console.log(`🛠️ Attempt #${attempt} to fill login...`);
+
         const usernameInput = document.getElementById('username');
         const passwordInput = document.getElementById('password');
 
@@ -27,22 +29,23 @@
             usernameInput.value = USERNAME;
             passwordInput.value = PASSWORD;
 
-            // Trigger input events in case there are listeners
+            // Dispatch input events to trigger any reactive listeners
             usernameInput.dispatchEvent(new Event('input', { bubbles: true }));
             passwordInput.dispatchEvent(new Event('input', { bubbles: true }));
 
-            console.log('[Ampre Autofill] Username and password set.');
-        } else if (attempts < MAX_ATTEMPTS) {
-            attempts++;
-            console.log(`[Ampre Autofill] Attempt ${attempts} - inputs not found, retrying...`);
-            setTimeout(tryFillFields, RETRY_DELAY);
+            console.log('✅ Login fields filled successfully!');
         } else {
-            console.warn('[Ampre Autofill] Failed to find login fields after multiple tries.');
+            if (attempt < MAX_RETRIES) {
+                console.warn(`⚠️ Login fields not found. Retrying in 500ms... (${attempt}/${MAX_RETRIES})`);
+                setTimeout(fillLogin, 500);
+            } else {
+                console.error('❌ Failed to find login fields after maximum attempts.');
+            }
         }
     }
 
-    // Wait a moment after page load in case of dynamic content
     window.addEventListener('load', () => {
-        setTimeout(tryFillFields, 500);
+        console.log('🌐 Page loaded. Starting login fill process...');
+        fillLogin();
     });
 })();
