@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Auto-fill PropTX Login
 // @namespace    http://tampermonkey.net/
-// @version      1.2
-// @description  Auto-fill login credentials on ampre sso with retry and logging
+// @version      1.3
+// @description  Auto-fill login on dynamically-loaded Ampre SSO page with retry and logging
 // @match        https://sso.ampre.ca/*
 // @grant        none
 // ==/UserScript==
@@ -14,13 +14,16 @@
     const USERNAME = '9644712'; // <- Change this to your username
     const PASSWORD = '1500';    // <- Change this to your password
 
-    // 🔁 Max number of retries
+    // 🔁 Retry settings
     const MAX_RETRIES = 5;
-    let attempt = 0;
+    const RETRY_INTERVAL = 500; // in milliseconds
+    let attempts = 0;
 
-    function fillLogin() {
-        attempt++;
-        console.log(`🛠️ Attempt #${attempt} to fill login...`);
+    console.log('🚀 Script started. Watching for login fields...');
+
+    const interval = setInterval(() => {
+        attempts++;
+        console.log(`🔍 Attempt #${attempts} to find and fill login fields`);
 
         const usernameInput = document.getElementById('username');
         const passwordInput = document.getElementById('password');
@@ -29,23 +32,15 @@
             usernameInput.value = USERNAME;
             passwordInput.value = PASSWORD;
 
-            // Dispatch input events to trigger any reactive listeners
+            // Dispatch input events
             usernameInput.dispatchEvent(new Event('input', { bubbles: true }));
             passwordInput.dispatchEvent(new Event('input', { bubbles: true }));
 
             console.log('✅ Login fields filled successfully!');
-        } else {
-            if (attempt < MAX_RETRIES) {
-                console.warn(`⚠️ Login fields not found. Retrying in 500ms... (${attempt}/${MAX_RETRIES})`);
-                setTimeout(fillLogin, 500);
-            } else {
-                console.error('❌ Failed to find login fields after maximum attempts.');
-            }
+            clearInterval(interval); // Stop checking
+        } else if (attempts >= MAX_RETRIES) {
+            console.error('❌ Could not find login fields after max retries.');
+            clearInterval(interval);
         }
-    }
-
-    window.addEventListener('load', () => {
-        console.log('🌐 Page loaded. Starting login fill process...');
-        fillLogin();
-    });
+    }, RETRY_INTERVAL);
 })();
