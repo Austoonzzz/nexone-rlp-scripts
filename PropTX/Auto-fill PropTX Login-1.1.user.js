@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Auto-fill Ampre Login (Reliable Version)
+// @name         Auto-fill PropTX Login (Reliable Version)
 // @namespace    http://tampermonkey.net/
 // @version      1.2
 // @description  Auto-fill login credentials on ampre sso with retry logic and easy editing
