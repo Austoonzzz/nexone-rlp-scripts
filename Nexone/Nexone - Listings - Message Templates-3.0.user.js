@@ -26,7 +26,7 @@
             'aanderson@royallepage.ca': 'Austin',
             'clewis@performancerealty.ca': 'Tilly',
             'jsouannhaphanh@royallepage.ca': 'Jessica',
-            'san@performancerealty.ca': 'Serena',
+            'sAn@performancerealty.ca': 'Serena',
             'lesliec@royallepage.ca': 'Leslie',
             'emack@performancerealty.ca': 'Emily',
             'hali@royallepage.ca': 'Hoda',
@@ -37,6 +37,10 @@
             'maladejebi@performancerealty.ca': 'Mojo',
             'semery@performancerealty.ca': 'Silvia',
             'tservage@performancerealty.ca': 'Tiffany',
+            'cmamanteo@performancerealty.ca': 'Catherine',
+            'jmacdonald@performancerealty.ca': 'Jacob',
+            'bfowlercampbell@performancerealty.ca': 'Beatrice',
+            'baliyar@performancerealty.ca': 'Bernia',
             'wmallette@royallepage.ca': 'Wendy'
 };
 
