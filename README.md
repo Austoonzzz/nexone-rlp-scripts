@@ -25,13 +25,15 @@ This repository contains a collection of Tampermonkey scripts that ease the Nexo
   - [Nexone - Listings - Add The Edit for the Blue Tag in Documents Tab](https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Add%20The%20Edit%20for%20the%20Blue%20Tag%20in%20Documents%20Tab-0.4.user.js)
   - [Nexone - Listings - Edit Functionality for Blue Tag In Documents Tab](https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Edit%20Functionality%20for%20Blue%20Tag%20In%20Documents%20Tab-1.7.user.js)
   - [Nexone - Listings - Remove Unnecessary Document Types During Upload](https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Remove%20Unnecessary%20Document%20Types%20During%20Upload-1.6.user.js)
-  - [NexOne - Listings - Verification Sample Table](https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/NexOne%20-%20Listings%20-%20Verification%20Sample%20Table-1.6.user.js)
+  - [Nexone - Listings - Verification Sample Table](https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/NexOne%20-%20Listings%20-%20Verification%20Sample%20Table-1.6.user.js)
+  - [Nexone - Listings - Message Templates](https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Message%20Templates-3.0.user.js)
 
 
 
 ### 3. Automatic Updates
 - Tampermonkey will automatically check for updates to the scripts.
 - If an update is available, Tampermonkey will notify you and install the latest version automatically.
+- If you are aware of an update and want it quickly, click on the install script above on what you're looking for
 
 ### 4. Getting Help
 - If you encounter any issues or need assistance, please contact Austin in Google Chat or email.
