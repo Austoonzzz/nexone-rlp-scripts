@@ -15,6 +15,7 @@ This repository contains a collection of Tampermonkey scripts that ease the Nexo
 - To install each script, simply click on the following links:
 - Once you click a link, Tampermonkey will prompt you to install the script.  
 - Click **Install** to add the script to Tampermonkey.
+- Repeat the process until you have all of the scripts installed.
 
   - [Nexone - Listings - Missing Docs Notifier](https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Missing%20Docs%20Notifier-1.6.user.js)
   - [Nexone - Listings - Hide Unnecessary Tables & Highlight Necessary Docs](https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Hide%20Unnecessary%20Tables%20&%20Highlight%20Necessary%20Docs-1.6.user.js)
