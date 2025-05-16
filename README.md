@@ -5,6 +5,7 @@ This repository contains a collection of Tampermonkey scripts that ease the Nexo
 ## Instructions for Setup
 
 > ⚠️ **Important Notice – Chrome Support Ending June 2025**  
+>
 > For our current version of Chrome, **Tampermonkey Legacy will stop working after June 2025** due to Google's removal of Manifest V2 support. To continue using the userscript, please switch to **Firefox**, which still supports these extensions. The installation instructions will reflect the change once Chrome support stops.
 
 ### 1. Install the Legacy Tampermonkey Extension for Chrome
