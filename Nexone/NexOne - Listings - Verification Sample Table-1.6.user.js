@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NexOne - Listings - Verification Sample Table
 // @namespace    http://tampermonkey.net/
-// @version      1.6
+// @version      1.6.1
 // @description  Conditionally add sample column and clickable icons for NexOne Docs. Skips if no icons apply. Optimized for performance and dynamic content. Updated icon & target cell logic.
 // @author       You
 // @match        https://legend.nexone.ca/Secure/Sale/Property/Documents.aspx*
@@ -92,27 +92,32 @@
         return true;
     }
 
-    function watchForTableLoad(maxRetries = 10) {
-        let tries = 0;
-        const interval = setInterval(() => {
-            const success = addTdToTable();
-            tries++;
-            if (success || tries >= maxRetries) {
-                clearInterval(interval);
+    function observeForTable() {
+        const observer = new MutationObserver(() => {
+            const table = document.getElementById('docTable');
+            if (table) {
+                if (addTdToTable()) {
+                    observer.disconnect(); // Stop watching after success
+                }
             }
-        }, 1000);
+        });
+
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true
+        });
     }
 
     function init() {
-        watchForTableLoad(); // Run on initial load
+        observeForTable(); // Initial watch
 
         const tabLink = document.querySelector('#ctl00_ContentPlaceHolder1__setDocumentsInformation');
         if (tabLink) {
             tabLink.addEventListener('click', () => {
-                watchForTableLoad();
+                observeForTable(); // Rewatch on tab click
             });
         }
     }
 
-    window.addEventListener('load', init);
+    init();
 })();
