@@ -35,10 +35,9 @@ This repository contains a collection of Tampermonkey scripts that ease the Nexo
 
 
 
-### 3. Automatic Updates
-- Tampermonkey will automatically check for updates to the scripts.
-- If an update is available, Tampermonkey will notify you and install the latest version automatically.
-- If you are aware of an update and want it quickly, click on the install script above on what you're looking for
+### 3. New Scripts, Updates and Bug Fixes 
+- For updates on any scripts listed on this page, please refer to the Google Chat titled "Script Updates".
+- If you haven't been added to this chat yet, please contact Austin in Google Chat to request an invitation.
 
 ### 4. Getting Help
 - If you encounter any issues or need assistance, please contact Austin in Google Chat or email.
