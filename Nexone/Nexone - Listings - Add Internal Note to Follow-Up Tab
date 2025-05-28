@@ -5,6 +5,8 @@
 // @description  Adds "Add internal note", triggers Add Message, unchecks recipients, and simulates click on message container after unchecking.
 // @author       You
 // @match        https://legend.nexone.ca/Secure/Sale/Property/Documents.aspx*
+// @downloadURL  https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Add%20Internal%20Note%20to%20Follow-Up%20Tab
+// @updateURL    https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Add%20Internal%20Note%20to%20Follow-Up%20Tab
 // @grant        none
 // ==/UserScript==
 
