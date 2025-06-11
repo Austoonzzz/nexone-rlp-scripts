@@ -7,8 +7,8 @@
 // @match        https://apptcenter.showingdesk.com/FrontDesk/Appointments/*
 // @match        https://apptcenter.showingtime.com/FrontDesk/Tasks/CallNow
 // @match        https://apptcenter.showingtime.com/FrontDesk/Appointments/*
-// @downloadURL  
-// @updateURL    
+// @downloadURL  https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Showingtime/ShowingTime%20-%20Auto%20Clear%20Appointment%20Activity.user.js
+// @updateURL    https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Showingtime/ShowingTime%20-%20Auto%20Clear%20Appointment%20Activity.user.js
 // @grant        none
 // ==/UserScript==
 
