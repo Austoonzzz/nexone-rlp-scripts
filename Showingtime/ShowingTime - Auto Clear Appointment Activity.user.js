@@ -7,6 +7,8 @@
 // @match        https://apptcenter.showingdesk.com/FrontDesk/Appointments/*
 // @match        https://apptcenter.showingtime.com/FrontDesk/Tasks/CallNow
 // @match        https://apptcenter.showingtime.com/FrontDesk/Appointments/*
+// @downloadURL  
+// @updateURL    
 // @grant        none
 // ==/UserScript==
 
