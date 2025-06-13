@@ -4,6 +4,8 @@
 // @version      1.9
 // @description  Tracks red tag follow-ups, autofills current URL and Address, prevents duplicates, allows export/import
 // @match        https://legend.nexone.ca/Secure/Sale/Property/*
+// @downloadURL  https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Red%20Tag%20Follow-Up%20Tracker.user.js
+// @updateURL    https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Red%20Tag%20Follow-Up%20Tracker.user.js
 // @grant        none
 // ==/UserScript==
 
