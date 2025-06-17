@@ -122,20 +122,6 @@
 
 <span style="font-weight: bold; text-decoration: underline;">FINTRAC Issues</span><br>
 
-<div id="fintrac_retired"
-     style="color: blue; cursor: pointer; display: inline-block;"
-     onmouseover="this.style.color='purple';"
-     onmouseout="this.style.color='blue';">
-    &nbsp;&nbsp;&nbsp;<span>FINTRAC (Retired)</span>
-</div><br>
-
-<div id="fintrac_unemployed"
-     style="color: blue; cursor: pointer; display: inline-block;"
-     onmouseover="this.style.color='purple';"
-     onmouseout="this.style.color='blue';">
-    &nbsp;&nbsp;&nbsp;<span>FINTRAC (Unemployed – i.e. Housewife, student, etc.)</span>
-</div><br>
-
 <div id="fintrac_incomplete"
      style="color: blue; cursor: pointer; display: inline-block;"
      onmouseover="this.style.color='purple';"
@@ -276,8 +262,6 @@
         addClickListener("listing_date_issue", `Hi ${selectedNames.join(' and ')},<br><br>Upon reviewing the Listing Agreement, I noticed that the date on the Listing Agreement and Form 960 do not match. Could you kindly add and re-upload at your earliest convenience?<br><br>Thank you,<br><br> ${username}`);
         addClickListener("form_200_missing", `Hi ${selectedNames.join(' and ')},<br><br>The listing agreement you uploaded is missing the designated representative section. Please note that this section is mandatory, and the new Form 200 does not include it. Could you kindly upload Form 271 or the old Form 200 which contains the designated representative section?<br><br>Thank you,<br><br> ${username}`);
         addClickListener("form_210_missing", `Hi ${selectedNames.join(' and ')},<br><br>The listing agreement you uploaded is missing the designated representative section. Please note that this section is mandatory, and the new Form 210 does not include it. Could you kindly upload Form 272 or the old Form 210 which contains the designated representative section?<br><br>Thank you,<br><br> ${username}`);
-        addClickListener("fintrac_retired", `Hi ${selectedNames.join(' and ')},<br><br>Upon reviewing the FINTRAC for Seller’s Name, I noticed that the employment is marked as retired. Could you kindly add the Previous Employer’s Name and Nature of Principal Occupation, then re-upload at your earliest convenience?<br><br>Thank you,<br><br> ${username}`);
-        addClickListener("fintrac_unemployed", `Hi ${selectedNames.join(' and ')},<br><br>Upon reviewing the FINTRAC for Seller’s Name, I noticed that the employment is marked as XX. Could you kindly add the Previous Employer’s Name and Nature of Principal Occupation then re-upload at your earliest convenience or confirm via email that Seller’s Name, never worked in the past?<br><br>Thank you,<br><br> ${username}`);
         addClickListener("fintrac_incomplete", `Hi ${selectedNames.join(' and ')},<br><br>Upon reviewing the FINTRAC for Seller’s Name, I noticed that the Section C & D haven’t been filled out. Could you kindly fill out those two sections then re-upload at your earliest convenience?<br><br>Thank you,<br><br> ${username}`);
         addClickListener("fintrac_corporation", `Hi ${selectedNames.join(' and ')},<br><br>As the Seller is a business, we would kindly ask to upload the Corporate/Entity Identification Information Record (Corporate FINTRAC), along with supporting documents stating that (Name of Person Signing Listing Agreement) has the authority to bind the corporation. (i.e. Articles of Incorporation, Certificate of Appointment, Certificate of Corporate Status, etc.)<br><br>Thank you,<br><br> ${username}`);
         addClickListener("upload_price_change", `Hi ${selectedNames.join(' and ')},<br><br>Could you kindly upload the fully signed Amendment to Listing Agreement changing the price to XX?<br>Thank you,<br><br> ${username}`);
