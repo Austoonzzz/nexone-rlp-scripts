@@ -4,6 +4,8 @@
 // @version      1.6
 // @description  Auto-fill memo field with templates, dynamic resizing, and recipient/agent/address auto-fill
 // @match        https://legend.nexone.ca/Secure/Faxing/Email/Send.aspx*
+// @downloadURL  
+// @updateURL    
 // @grant        none
 // ==/UserScript==
 
