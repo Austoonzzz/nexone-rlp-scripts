@@ -4,8 +4,8 @@
 // @version      1.6
 // @description  Auto-fill memo field with templates, dynamic resizing, and recipient/agent/address auto-fill
 // @match        https://legend.nexone.ca/Secure/Faxing/Email/Send.aspx*
-// @downloadURL  
-// @updateURL    
+// @downloadURL  https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Manager%20Notification%20Email%20Templates.user.js
+// @updateURL    https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Manager%20Notification%20Email%20Templates.user.js
 // @grant        none
 // ==/UserScript==
 
