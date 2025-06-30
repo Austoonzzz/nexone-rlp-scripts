@@ -4,6 +4,8 @@
 // @version      2.2
 // @description  Sidebar that tracks red tagged listing based on 7 day / 24hr filter
 // @match        https://legend.nexone.ca/Secure/Sale/Property/*
+// @downloadURL  https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Red%20Tag%20Tracking%20Table.user.js
+// @updateURL    https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Red%20Tag%20Tracking%20Table.user.js
 // @grant        none
 // ==/UserScript==
 
