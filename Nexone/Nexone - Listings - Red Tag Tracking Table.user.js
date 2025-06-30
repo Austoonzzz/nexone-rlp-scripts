@@ -17,7 +17,7 @@
     tab1: 'redTagFollowUpData_tab1',
     tab2: 'redTagFollowUpData_tab2',
     collapsed: 'redTagTrackerCollapsed',
-    selectedTab: 'redTagTrackerSelectedTab' // 👈 add this line
+    selectedTab: 'redTagTrackerSelectedTab'
 };
 
 
