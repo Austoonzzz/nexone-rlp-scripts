@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Nexone - Listings - Edit Functionality for Blue Tag In Documents Tab
+// @name         Nexone - Listings - Edit Functionality for Blue Tag In Documents Tab (Disabled)
 // @namespace    http://tampermonkey.net/
-// @version      1.7
-// @description  Watches blue tag changes, stores updates, clicks "View Listing", edits Profile, checks checkbox, fills textarea, saves changes, and clicks Profile
+// @version      1.8
+// @description  ❌ This script has been disabled and does nothing.
 // @match        https://legend.nexone.ca/Secure/Sale/Property/Documents.aspx*
 // @match        https://legend.nexone.ca/Secure/Sale/Property/Profile*
 // @downloadURL  https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Edit%20Functionality%20for%20Blue%20Tag%20In%20Documents%20Tab-1.7.user.js
@@ -13,6 +13,10 @@
 (function() {
     'use strict';
 
+    /*
+    🚫 This script has been intentionally disabled.
+    The original functionality is preserved below in case reactivation is needed.
+
     console.log("Tampermonkey script running on:", window.location.href);
 
     if (window.location.href.includes("Documents.aspx")) {
@@ -21,8 +25,8 @@
 
     if (window.location.href.includes("Profile")) {
         let attempts = 0;
-        const maxAttempts = 5;  // Try up to 5 times
-        const checkInterval = 100; // 1 second between checks
+        const maxAttempts = 5;
+        const checkInterval = 100;
 
         const interval = setInterval(() => {
             attempts++;
@@ -159,5 +163,6 @@
             console.error("❌ Profile span not found!");
         }
     }
+    */
 
 })();
