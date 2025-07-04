@@ -4,6 +4,8 @@
 // @version      2.3
 // @description  Fetches blue/red tags from profile tab, appears in documents tab, allowing you to edit. Once edited, it syncs your changes back to the profile page.
 // @author       Austin
+// @downloadURL  https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Blue%20&%20Red%20Tag%20on%20Documents%20Page%20With%20Edit%20Button.user.js
+// @updateURL    https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/Nexone%20-%20Listings%20-%20Blue%20&%20Red%20Tag%20on%20Documents%20Page%20With%20Edit%20Button.user.js
 // @match        https://legend.nexone.ca/Secure/Sale/Property/Documents.aspx*
 // @match        https://legend.nexone.ca/Secure/Sale/Property/Profile*
 // @grant        GM_xmlhttpRequest
