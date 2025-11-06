@@ -18,7 +18,7 @@
 
     // List of allowed option values
     const validOptions = [
-        2, 3, 14, 42, 50, 56, 72, 91, 94, 814, 912, 991, 1064, 1086
+        2, 3, 14, 42, 50, 56, 72, 91, 94, 854, 912, 991, 1064, 1086
     ];
 
     // Listen for clicks on both "Add documents" and "Edit document" links
