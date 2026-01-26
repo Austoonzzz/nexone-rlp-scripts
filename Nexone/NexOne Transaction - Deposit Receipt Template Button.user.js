@@ -4,8 +4,8 @@
 // @version      1.3
 // @description  Add Deposit Receipt button to auto-select listing agents, fill memo, and edit subject
 // @match        https://legend.nexone.ca/Secure/Faxing/Email/Send.aspx*
-// @downloadURL  https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/NexOne%20Transaction%20-%20Deposit%20Receipt%20Template%20Button
-// @updateURL    https://github.com/Austoonzzz/nexone-rlp-scripts/raw/refs/heads/main/Nexone/NexOne%20Transaction%20-%20Deposit%20Receipt%20Template%20Button
+// @downloadURL  
+// @updateURL    
 // @grant        none
 // ==/UserScript==
 
